@@ -1,0 +1,201 @@
+schema_version: 1
+methodology_id: methodology-2025
+source_id: methodology-2025-order-147
+effective_from: '2025-11-07'
+effective_to: '2026-05-26'
+indicator_count: 10
+overall_groups:
+  leader:
+    minimum: 85
+  intermediate:
+    minimum: 70
+    maximum_exclusive: 85
+  lagging:
+    maximum_exclusive: 70
+weight_redistribution: proportional_among_applicable
+source_formula_collision: В общей формуле визуально указан верхний предел 6, но объявлены В1-В10; расчётный контекст
+  использует все 10 объявленных показателей.
+indicators:
+- number: 1
+  code: mszu
+  name: Доля обращений за получением МСЗУ в электронном виде через ЕПГУ
+  base_weight: 0.1
+  formula: sum(electronic_requests) / sum(all_requests) * 100%
+  groups:
+    leader:
+      minimum: 70
+    intermediate:
+      minimum: 60
+      maximum_exclusive: 70
+    lagging:
+      maximum_exclusive: 60
+  periodicity: monthly
+- number: 2
+  code: pos
+  name: Использование Платформы обратной связи
+  base_weight: 0.1
+  formula: sum(points) / 500 * 100%
+  groups:
+    leader:
+      minimum: 85
+    intermediate:
+      minimum: 60
+      maximum_exclusive: 85
+    lagging:
+      maximum_exclusive: 60
+  periodicity: monthly
+  subindicators:
+  - code: pos_2025_01
+    number: '2.1'
+    name: Доля подключённых к ПОС организаций
+    max_points: 30
+  - code: pos_2025_02
+    number: '2.2'
+    name: Доля органов и организаций, разместивших виджет ПОС
+    max_points: 50
+  - code: pos_2025_03
+    number: '2.3'
+    name: Доля применяемых автоправил
+    max_points: 20
+  - code: pos_2025_04
+    number: '2.4'
+    name: Доля организаций с включённой автокоординацией
+    max_points: 20
+  - code: pos_2025_05
+    number: '2.5'
+    name: Доля шаблонизированных ответов
+    max_points: 20
+  - code: pos_2025_06
+    number: '2.6'
+    name: Доля ответов в регламентный срок
+    max_points: 30
+  - code: pos_2025_07
+    number: '2.7'
+    name: Уровень удовлетворённости граждан ответами
+    max_points: 30
+  - code: pos_2025_08
+    number: '2.8'
+    name: Доля сообщений и обращений, поступивших в ПОС
+    max_points: 50
+  - code: pos_2025_09
+    number: '2.9'
+    name: Доля жителей старше 14 лет, участвовавших в опросах и голосованиях
+    max_points: 30
+  - code: pos_2025_10
+    number: '2.10'
+    name: Количество опубликованных опросов
+    max_points: 30
+  - code: pos_2025_11
+    number: '2.11'
+    name: Доля поселений, проведших хотя бы один опрос
+    max_points: 30
+  - code: pos_2025_12
+    number: '2.12'
+    name: Доля поселений, подключённых к модулю голосований и подтвердивших готовность
+    max_points: 50
+  - code: pos_2025_13
+    number: '2.13'
+    name: Доля поселений, разместивших виджеты модуля голосования
+    max_points: 50
+  - code: pos_2025_14
+    number: '2.14'
+    name: Количество проведённых голосований
+    max_points: 30
+  - code: pos_2025_15
+    number: '2.15'
+    name: Доля размещённых в ПОС публичных слушаний
+    max_points: 30
+  maximum_points: 500
+- number: 3
+  code: gov_publics
+  name: Госпаблики
+  base_weight: 0.1
+  formula: P3.1 + 0.5*P3.2 + 0.5*P3.3; engagement normalization uses denominator 3
+  groups:
+    leader:
+      minimum: 95
+    intermediate:
+      minimum: 85
+      maximum_exclusive: 95
+    lagging:
+      maximum_exclusive: 85
+  periodicity: monthly
+- number: 4
+  code: goskey
+  name: Госключ
+  base_weight: 0.1
+  formula: certificates / ceil(population*0.0002), cap 100%
+  groups:
+    leader:
+      minimum: 100
+    intermediate:
+      minimum: 80
+      maximum_exclusive: 100
+    lagging:
+      maximum_exclusive: 80
+  periodicity: monthly
+- number: 5
+  code: transport
+  name: Цифровая зрелость общественного транспорта
+  base_weight: 0.1
+  formula: average of three scored subindicators
+  groups:
+    leader:
+      minimum: 92
+    intermediate:
+      minimum: 60
+      maximum_exclusive: 92
+    lagging:
+      maximum_exclusive: 60
+  periodicity: monthly
+  targets:
+  - 94
+  - 92
+  - 92
+- number: 6
+  code: urban_environment
+  name: Цифровая зрелость городской среды
+  base_weight: 0.1
+  formula: average of applicable subindicators
+  groups:
+    leader:
+      minimum: 77
+    intermediate:
+      minimum: 37
+      maximum_exclusive: 77
+    lagging:
+      maximum_exclusive: 37
+  periodicity: monthly
+- number: 7
+  code: gisogd
+  name: ГИСОГД
+  base_weight: 0.1
+  formula: weighted vector data completeness
+  groups:
+    leader:
+      minimum: 70
+    intermediate:
+      minimum: 35
+      maximum_exclusive: 70
+    lagging:
+      maximum_exclusive: 35
+  periodicity: monthly
+- number: 8
+  code: education
+  name: Цифровая зрелость в сфере Образование
+  base_weight: 0.1
+  formula: average of two scored subindicators
+  periodicity: quarterly
+- number: 9
+  code: sport
+  name: Цифровая зрелость в сфере Физкультура и спорт
+  base_weight: 0.1
+  formula: average of applicable subindicators
+  periodicity: quarterly
+- number: 10
+  code: stray_animals
+  name: Доля выполненных заявок по отлову животных без владельцев
+  base_weight: 0.1
+  formula: completed / received * 100%
+  periodicity: quarterly
+  effective_from: 2026-03

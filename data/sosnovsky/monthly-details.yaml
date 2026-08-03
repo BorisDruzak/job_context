@@ -1,0 +1,223 @@
+schema_version: 1
+municipality: Сосновский МО
+periods:
+  2026-04:
+    source_id: rating-2026-04
+    rank: 30
+    official_total: 70.75
+    mszu:
+      total: 92.76
+      om16:
+        electronic: 4897
+        all: 4925
+        percent: 99.43
+      social:
+        electronic: 989
+        all: 1341
+        percent: 73.75
+      education:
+        electronic: 1023
+        all: 1182
+        percent: 86.55
+      electronic_requests: 6909
+      all_requests: 7448
+    pos:
+      total: 64.29
+      awarded_points: 225
+      maximum_points: 350
+      points:
+      - 30
+      - 10
+      - 20
+      - 20
+      - 20
+      - 30
+      - 20
+      - 30
+      - 0
+      - 15
+      - 30
+      - 0
+    gov_publics:
+      total: 80.07
+      groups_total: 61
+      groups_meeting_posting_norm: 44
+      posting_norm_percent: 72.13
+      minimum_requirements_factor: 0.92
+      minimum_requirements_penalty: -6
+      views: 619661
+      likes: 21888
+      comments: 759
+      reposts: 1402
+      engagement_rate: 3.88
+      engagement_target_achievement: 100.0
+    urban_environment:
+      total: 28.44
+      population: 96489
+      gosuslugi_dom_users_count: 7057
+      gosuslugi_dom_users: 7.31
+      electronic_meetings_count: 3
+      all_meetings_count: 5
+      electronic_general_meetings: 60.0
+      all_chats_count: 250
+      chats_40_plus_count: 45
+      max_chats_40_plus: 18.0
+    broadband:
+      total: 38.1
+      local_government_with_internet: 3
+      culture_objects_with_internet: 21
+      all_local_government: 11
+      all_culture_objects: 52
+      excluded_objects: 0
+  2026-05:
+    source_id: rating-2026-05
+    rank: 33
+    official_total: 69.59
+    change_from_previous: -1.16
+    mszu:
+      total: 92.87
+      om16:
+        electronic: 6825
+        all: 6858
+        percent: 99.52
+      social:
+        electronic: 1183
+        all: 1636
+        percent: 72.31
+      education:
+        electronic: 1171
+        all: 1390
+        percent: 84.24
+      electronic_requests: 9179
+      all_requests: 9884
+    pos:
+      total: 64.29
+      awarded_points: 225
+      maximum_points: 350
+      points:
+      - 30
+      - 10
+      - 20
+      - 20
+      - 20
+      - 30
+      - 20
+      - 30
+      - 0
+      - 15
+      - 30
+      - 0
+    gov_publics:
+      total: 80.13
+      groups_total: 63
+      groups_meeting_posting_norm: 43
+      posting_norm_percent: 68.25
+      minimum_requirements_factor: 0.95
+      minimum_requirements_penalty: -4
+      views: 592223
+      likes: 23314
+      comments: 692
+      reposts: 1794
+      engagement_rate: 4.36
+      engagement_target_achievement: 100.0
+    urban_environment:
+      total: 17.81
+      population: 96489
+      gosuslugi_dom_users_count: 7497
+      gosuslugi_dom_users: 7.77
+      electronic_meetings_count: 3
+      all_meetings_count: 11
+      electronic_general_meetings: 27.27
+      all_chats_count: 250
+      chats_40_plus_count: 46
+      max_chats_40_plus: 18.4
+    broadband:
+      total: 38.1
+      local_government_with_internet: 3
+      culture_objects_with_internet: 21
+      all_local_government: 11
+      all_culture_objects: 52
+      excluded_objects: 0
+  2026-06:
+    source_id: rating-2026-06
+    rank: 29
+    official_total: 79.8
+    change_from_previous: 10.21
+    mszu:
+      total: 92.41
+      om16:
+        electronic: 8288
+        all: 8334
+        percent: 99.45
+      social:
+        electronic: 1408
+        all: 1992
+        percent: 70.68
+      education:
+        electronic: 1364
+        all: 1643
+        percent: 83.02
+      electronic_requests: 11060
+      all_requests: 11969
+    pos:
+      total: 64.29
+      awarded_points: 225
+      maximum_points: 350
+      points_by_code:
+        pos_connected_lko: 30
+        pos_widgets: 10
+        pos_auto_rules: 20
+        pos_auto_coordination: 20
+        pos_template_answers: 20
+        pos_on_time: 30
+        pos_satisfaction: 20
+        pos_share: 30
+        pos_participation: 0
+        pos_surveys: 15
+        pos_votes: 30
+        pos_public_hearings: 0
+      weak_subindicators:
+      - pos_participation
+      - pos_public_hearings
+    gov_publics:
+      total: 86.97
+      groups_total: 64
+      groups_meeting_posting_norm: 49
+      posting_norm_percent: 76.56
+      minimum_requirements_factor: 1.0
+      minimum_requirements_penalty: 0
+      views: 686412
+      likes: 21990
+      comments: 647
+      reposts: 1423
+      engagement_rate: 3.51
+      engagement_target_achievement: 97.37
+    urban_environment:
+      total: 25.46
+      population: 96489
+      gosuslugi_dom_users_count: 7766
+      gosuslugi_dom_users: 8.05
+      electronic_meetings_count: 9
+      all_meetings_count: 23
+      electronic_general_meetings: 39.13
+      all_chats_count: 250
+      chats_40_plus_count: 73
+      max_chats_40_plus: 29.2
+    gisogd:
+      total: 83.13
+    education:
+      total: 100.0
+      schools_using_moya_shkola: 100.0
+      digital_content_users: 43.4
+    sport: null
+    stray_animals:
+      total: 45.74
+      received_requests: 94
+      completed_requests: 43
+    broadband:
+      total: 100.0
+      local_government_with_internet: 11
+      culture_objects_with_internet: 49
+      all_local_government: 11
+      all_culture_objects: 52
+      excluded_objects: 3

@@ -1,0 +1,149 @@
+schema_version: 1
+municipality: Сосновский МО
+source_id: subcommission-34-2026-08-03
+assignments:
+- id: sub34-postal-land-tax
+  source_slide: 6
+  title: Проработать возможность льгот по земельному налогу для организаций почтовой связи
+  applicability: explicit
+  deadline: '2026-09-01'
+  periodicity: once
+  subject_owner: finance_or_property_department
+  department_role: coordinator
+  status: unknown
+  evidence: null
+  blockers: решение находится вне полномочий ИТ-отдела
+- id: sub34-broadband-100
+  source_slide: 8
+  title: Обеспечивать ШПД муниципальных социально значимых объектов на уровне 100%
+  applicability: all_municipalities
+  deadline_rule: до 15 числа последнего месяца квартала
+  periodicity: quarterly
+  subject_owner: it_department
+  department_role: owner
+  status: completed_for_2026_q2
+  evidence: 'рейтинг июня: 100%'
+- id: sub34-om100-reporting
+  source_slide: 16
+  title: Заполнять отчётные сведения ОМ-100 о подключении МСЗО к ШПД
+  applicability: all_municipalities
+  deadline_rule: до 15 числа последнего месяца квартала
+  periodicity: quarterly
+  subject_owner: it_department
+  department_role: owner
+  status: recurring
+- id: sub34-pos-uk-lko
+  source_slide: 16
+  title: Обеспечить подготовку ЛКО управляющих компаний к работе в ПОС
+  applicability: explicit
+  deadline: '2026-06-30'
+  periodicity: once
+  subject_owner: housing_and_communal_services
+  department_role: coordinator
+  status: overdue_or_requires_confirmation
+- id: sub34-online-general-meetings
+  source_slide: 13
+  title: Довести долю онлайн-собраний собственников через ГИС ЖКХ до 60%
+  applicability: explicit
+  deadline: '2026-06-30'
+  periodicity: continuous_after_deadline
+  subject_owner: housing_and_communal_services
+  department_role: coordinator
+  status: not_achieved
+  evidence: 'июнь: 39.13%'
+- id: sub34-max-chats
+  source_slide: 14
+  title: Перевести домовые чаты в MAX и обеспечить не менее 40 участников в каждом учитываемом чате
+  applicability: explicit
+  deadline: '2026-06-30'
+  periodicity: continuous_after_deadline
+  subject_owner: housing_and_communal_services
+  department_role: coordinator
+  status: not_achieved
+  evidence: 'июнь: 29.20% чатов имеют 40+ участников'
+- id: sub34-gosuslugi-dom
+  source_slide: 15
+  title: Довести долю постоянных пользователей Госуслуги.Дом до 35%
+  applicability: all_municipalities
+  deadline: '2026-06-30'
+  periodicity: continuous_after_deadline
+  subject_owner: housing_and_communal_services
+  department_role: coordinator
+  status: not_achieved
+  evidence: 'июнь: 8.05%'
+- id: sub34-rsud-data-management
+  source_slide: 11
+  title: Пройти регистрацию в модуле Управление данными ГИС РСУД
+  applicability: all_municipalities
+  deadline: '2026-06-30'
+  periodicity: once
+  subject_owner: digital_transformation_coordinator
+  department_role: coordinator
+  status: requires_confirmation
+- id: sub34-education-data-quality
+  source_slide: 12
+  title: Обеспечить полноту, актуальность и достоверность данных в ГИС Образование
+  applicability: all_municipalities
+  deadline: '2026-06-30'
+  periodicity: continuous
+  subject_owner: education_organization
+  department_role: external
+  status: external
+- id: sub34-elk-frgu-migration
+  source_slide: 79
+  title: Выполнить этапы настройки передачи статусов и результатов услуг в ЕЛК через ФРГУ 3.0
+  applicability: all_municipalities
+  schedule:
+  - '2026-08-12/2026-09-09: внесение сведений о муниципальных услугах в ФРГУ 3.0'
+  - '2026-09-10/2026-09-23: сбор данных для ЕСНСИ и настройки стандартов'
+  - 'после настройки: активировать доступ и направить подтверждение'
+  periodicity: project
+  subject_owner: municipal_services_owner
+  department_role: coordinator
+  status: planned
+- id: sub34-pos-widget-audit
+  source_slide: 87
+  title: Проверить сайты, ссылки ЛКО и ID виджетов ПОС
+  applicability: all_municipalities
+  deadline: '2026-08-17'
+  periodicity: once
+  subject_owner: website_owners
+  department_role: coordinator
+  status: in_progress_or_unknown
+  evidence: в презентации по Сосновскому МО указано 6 сайтов с отсутствующими виджетами или ошибками
+- id: sub34-frgu-responsibles
+  source_slide: 89
+  title: Назначить до двух ответственных за реестр услуг и представить перечень услуг для ФРГУ 3.0
+  applicability: all_municipalities
+  deadline: '2026-08-06'
+  periodicity: once
+  subject_owner: municipal_services_owner
+  department_role: coordinator
+  status: requires_confirmation
+- id: sub34-frgu-regulation
+  source_slide: 90
+  title: Проверить или утвердить порядок ведения реестра услуг и заключить соглашение о согласовании карточек
+  applicability: all_municipalities
+  deadline: '2026-08-10'
+  periodicity: once
+  subject_owner: legal_and_municipal_services
+  department_role: coordinator
+  status: requires_confirmation
+- id: sub34-veterinary-recovery
+  source_slide: 58
+  title: Организовать повышение доли отработанных заявок по отлову животных
+  applicability: rating_risk
+  periodicity: quarterly
+  subject_owner: profile_department
+  department_role: coordinator
+  status: not_achieved
+  evidence: 'II квартал: 43 из 94, 45.74%'
+- id: sub34-ai-q3-readiness
+  source_slide: 36
+  title: Подготовиться к показателям 12-14 по данным и искусственному интеллекту
+  applicability: all_municipalities
+  deadline_rule: учёт с сентября 2026 за III квартал
+  periodicity: quarterly
+  subject_owner: not_assigned
+  department_role: coordinator
+  status: not_started

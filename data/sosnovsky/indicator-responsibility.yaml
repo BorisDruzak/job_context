@@ -1,0 +1,119 @@
+schema_version: 1
+municipality: Сосновский МО
+source_id: operator-context-2026-08-04
+indicators:
+- indicator_code: mszu
+  official_owner: null
+  department_actual_roles:
+  - coordinator
+  - technical_support
+  controllability: partial
+  operator_note: Показатель основан на оказанных услугах и доле электронных обращений. Ситуация стабильная; автоматизация
+    относится к последней очереди.
+  open_questions: []
+- indicator_code: pos
+  official_owner: null
+  department_actual_roles:
+  - coordinator
+  - technical_support
+  controllability: partial
+  operator_note: Отдел влияет на часть рейтинга ПОС, но границы процесса пока не определены. Известны задачи по
+    виджетам, опросам и техническим настройкам.
+  open_questions:
+  - Назначить владельца каждого из 12 подпоказателей ПОС.
+- indicator_code: gov_publics
+  official_owner: null
+  department_actual_roles:
+  - coordinator
+  - technical_support
+  controllability: partial
+  operator_note: Региональная сторона предоставляет элементы автоматизации и автопостинга; локально требуется приводить
+    группы, оформление и публикационную дисциплину в порядок.
+  open_questions: []
+- indicator_code: goskey
+  official_owner: external_organization
+  department_actual_roles:
+  - external
+  controllability: none
+  operator_note: Показатель выполняется другой организацией.
+  open_questions: []
+- indicator_code: transport
+  official_owner: profile_department
+  department_actual_roles:
+  - coordinator
+  controllability: low
+  operator_note: В официальных выгрузках значение 100%, однако пользователь не относит транспорт к зоне отдела.
+  open_questions: []
+- indicator_code: urban_environment
+  official_owner: housing_and_communal_services
+  department_actual_roles:
+  - coordinator
+  controllability: low
+  operator_note: Основной проблемный показатель. Собрания, приложение и набор жителей в чаты требуют действий ЖКХ,
+    УК, собственников и жителей вне прямого подчинения отдела.
+  open_questions: []
+- indicator_code: gisogd
+  official_owner: urban_planning_department
+  department_actual_roles:
+  - technical_support
+  controllability: low
+  operator_note: Показатель работает; предметный владелец находится вне ИТ-отдела.
+  open_questions: []
+- indicator_code: education
+  official_owner: external_organization
+  department_actual_roles:
+  - external
+  controllability: none
+  operator_note: Показатель выполняется другой организацией.
+  open_questions: []
+- indicator_code: sport
+  official_owner: null
+  department_actual_roles:
+  - coordinator
+  controllability: unknown
+  operator_note: Отдел показатель не ведёт. В строках Сосновского МО значение отсутствует, поэтому применимость
+    фиксируется как требующая подтверждения.
+  open_questions:
+  - Подтвердить официальный статус применимости показателя спорта.
+- indicator_code: stray_animals
+  official_owner: profile_department
+  department_actual_roles:
+  - coordinator
+  controllability: partial
+  operator_note: Новый показатель; требуется организовать контроль поступивших и отработанных заявок.
+  open_questions: []
+- indicator_code: broadband
+  official_owner: it_department
+  department_actual_roles:
+  - owner
+  - technical_support
+  controllability: high
+  operator_note: Показатель полностью отработан отделом; в июне достигнуто 100%.
+  open_questions: []
+- indicator_code: ai_datasets
+  official_owner: null
+  department_actual_roles:
+  - coordinator
+  controllability: unknown
+  operator_note: Начинает учитываться с III квартала; владелец и набор данных ещё не определены.
+  open_questions:
+  - Назначить владельца и выбрать допустимый набор данных без персональных данных.
+- indicator_code: centralized_ai
+  official_owner: null
+  department_actual_roles:
+  - coordinator
+  controllability: unknown
+  operator_note: Начинает учитываться с III квартала; необходимо получить доступ, провести апробацию и оформить
+    эффект.
+  open_questions:
+  - Определить централизованное решение и пользователей.
+- indicator_code: local_ai
+  official_owner: null
+  department_actual_roles:
+  - coordinator
+  - technical_support
+  controllability: unknown
+  operator_note: Требуется формальный ИИ-проект, введённый в эксплуатацию, с оценкой эффекта и публикацией на портале.
+    Индивидуальное использование внешних сервисов не засчитывается.
+  open_questions:
+  - Определить реалистичный формальный проект и владельца.

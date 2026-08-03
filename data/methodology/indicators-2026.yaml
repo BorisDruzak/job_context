@@ -1,0 +1,449 @@
+schema_version: 1
+methodology_id: methodology-2026
+source_id: methodology-2026-order-61
+effective_from: '2026-05-27'
+indicator_count: 14
+overall_groups:
+  leader:
+    minimum: 85
+  intermediate:
+    minimum: 70
+    maximum_exclusive: 85
+  lagging:
+    maximum_exclusive: 70
+weight_redistribution: proportional_among_applicable
+source_formula_collision: В общей формуле визуально указан верхний предел 6, но объявлены В1-В14; расчётный контекст
+  использует все 14 объявленных показателей.
+indicators:
+- number: 1
+  code: mszu
+  name: Доля обращений за получением МСЗУ в электронном виде через ЕПГУ
+  base_weight: 0.07142857142857142
+  formula: sum(electronic_requests) / sum(all_requests) * 100%
+  groups:
+    leader:
+      minimum: 75
+    intermediate:
+      minimum: 70
+      maximum_exclusive: 75
+    lagging:
+      maximum_exclusive: 70
+  periodicity: monthly
+  source: Федеральный ситуационный центр, ОМ-16 и данные профильных министерств
+- number: 2
+  code: pos
+  name: Использование Платформы обратной связи
+  base_weight: 0.07142857142857142
+  formula: sum(awarded_subindicator_points) / sum(max_subindicator_points) * 100%
+  groups:
+    leader:
+      minimum: 85
+    intermediate:
+      minimum: 60
+      maximum_exclusive: 85
+    lagging:
+      maximum_exclusive: 60
+  periodicity: monthly
+  source: мониторинг ПОС
+  subindicators:
+  - code: pos_connected_lko
+    number: '2.1'
+    name: Доля подключённых к ПОС организаций
+    formula: N / N0
+    max_points: 30
+    scoring:
+    - 30 при >=95%
+    - 0 при <95%
+  - code: pos_widgets
+    number: '2.2'
+    name: Доля органов и организаций, разместивших виджет ПОС
+    formula: (K + N) / (1 + N0)
+    max_points: 50
+    scoring:
+    - 50 при >=95%
+    - 30 при 92-<95%
+    - 20 при 90-<92%
+    - 10 при 80-<90%
+    - 0 при <80%
+  - code: pos_auto_rules
+    number: '2.3'
+    name: Доля применяемых автоправил
+    formula: N / N0
+    max_points: 20
+    scoring:
+    - 20 при >=60%
+    - 15 при 40-<60%
+    - 10 при 20-<40%
+    - 5 при 10-<20%
+    - 0 при <10%
+  - code: pos_auto_coordination
+    number: '2.4'
+    name: Доля организаций с включённой автокоординацией
+    formula: (K + N) / (1 + N0)
+    max_points: 20
+    scoring:
+    - 20 при >=60%
+    - 15 при 40-<60%
+    - 10 при 20-<40%
+    - 5 при 10-<20%
+    - 0 при <10%
+  - code: pos_template_answers
+    number: '2.5'
+    name: Доля шаблонизированных ответов
+    formula: N / N0
+    max_points: 20
+    scoring:
+    - 20 при >=61%
+    - 15 при 41-<61%
+    - 10 при 21-<41%
+    - 5 при 11-<21%
+    - 0 при <11%
+  - code: pos_on_time
+    number: '2.6'
+    name: Доля ответов в регламентный срок
+    formula: N / N0
+    max_points: 30
+    scoring:
+    - 30 при >=95%
+    - 20 при 90-<95%
+    - 15 при 85-<90%
+    - 10 при 80-<85%
+    - 0 при <80%
+  - code: pos_satisfaction
+    number: '2.7'
+    name: Уровень удовлетворённости граждан ответами
+    formula: положительные оценки 4-5 / все оценки
+    max_points: 30
+    scoring:
+    - 30 при >=81%
+    - 20 при 61-<81%
+    - 15 при 41-<61%
+    - 10 при 21-<41%
+    - 0 при <21%
+  - code: pos_share
+    number: '2.8'
+    name: Доля сообщений и обращений, поступивших в ПОС
+    formula: N_ПОС / (N_59-ФЗ + N_С) * 100%
+    max_points: 30
+    scoring:
+    - 30 при >=51%
+    - 25 при 41-<51%
+    - 20 при 31-<41%
+    - 15 при 21-<31%
+    - 10 при 11-<21%
+    - 5 при 6-<11%
+    - 0 при <6%
+  - code: pos_participation
+    number: '2.9'
+    name: Доля жителей, участвовавших в опросах и голосованиях
+    formula: уникальные участники / жители старше 14 лет * 100%
+    max_points: 30
+    scoring:
+    - 30 при >4%
+    - 25 при >3-4%
+    - 20 при >2-3%
+    - 15 при >1-2%
+    - 10 при >0.5-1%
+    - 5 при >0.2-0.5%
+    - 0 при <=0.2%
+  - code: pos_surveys
+    number: '2.10'
+    name: Количество проведённых опросов
+    formula: N с нарастающим итогом
+    max_points: 30
+    scoring:
+    - 30 при >=4
+    - 15 при 1-3
+    - 0 при 0
+  - code: pos_votes
+    number: '2.11'
+    name: Количество проведённых голосований
+    formula: N голосований по реализуемым в текущем году проектам
+    max_points: 30
+    scoring:
+    - 30 при >=1
+    - 0 при 0
+  - code: pos_public_hearings
+    number: '2.12'
+    name: Доля размещённых в ПОС публичных слушаний
+    formula: слушания через ПОС / все публичные слушания * 100%
+    max_points: 30
+    scoring:
+    - 30 при 80-100%
+    - 20 при 60-<80%
+    - 10 при 40-<60%
+    - 5 при 20-<40%
+    - 0 при <20%
+  maximum_points: 350
+- number: 3
+  code: gov_publics
+  name: 'Обеспечение доступа к информации: госпаблики'
+  base_weight: 0.07142857142857142
+  formula: P3.1 + 0.5*P3.2 + 0.5*P3.3
+  groups:
+    leader:
+      minimum: 95
+    intermediate:
+      minimum: 85
+      maximum_exclusive: 95
+    lagging:
+      maximum_exclusive: 85
+  periodicity: monthly
+  source: Управление общественных связей / ЦУР
+  subindicators:
+  - code: minimum_requirements
+    formula: (G + P + F) / C / 3
+    note: преобразуется в штраф от 0 до -22 п.п.
+  - code: posting_norm
+    formula: pages_with_3_posts_each_week / (all_pages - business_card_pages) * 100%
+    cap: 100
+  - code: engagement
+    formula: ((likes + comments + reposts) / views * 100%) * 100 / 3.6
+    cap: 100
+- number: 4
+  code: goskey
+  name: Внедрение мобильной электронной подписи Госключ
+  base_weight: 0.07142857142857142
+  formula: certificates_received / ceil(population * 0.0002) * 100%, cap 100%
+  groups:
+    leader:
+      minimum: 100
+    intermediate:
+      minimum: 80
+      maximum_exclusive: 100
+    lagging:
+      maximum_exclusive: 80
+  periodicity: monthly
+  source: ОГАУ МФЦ Челябинской области
+- number: 5
+  code: transport
+  name: Цифровая зрелость общественного транспорта
+  base_weight: 0.07142857142857142
+  formula: average(score of applicable subindicators) * 100%
+  groups:
+    leader:
+      minimum: 94
+    intermediate:
+      minimum: 60
+      maximum_exclusive: 94
+    lagging:
+      maximum_exclusive: 60
+  periodicity: monthly
+  source: Министерство дорожного хозяйства и транспорта
+  subindicators:
+  - code: cashless_payment
+    target: 95
+    score: 1 при >=95%; 0.5 при >60% и <95%; 0 при <60%
+  - code: live_tracking
+    target: 93
+    score: 1 при >=93%; 0.5 при >60% и <93%; 0 при <60%
+  - code: video_surveillance
+    target: 95
+    score: 1 при >=95%; 0.5 при >60% и <95%; 0 при <60%
+  open_issue: Граница ровно 60% сформулирована неполно.
+- number: 6
+  code: urban_environment
+  name: Цифровая зрелость городской среды
+  base_weight: 0.07142857142857142
+  formula: average(P6.1, P6.2, P6.3)
+  groups:
+    leader:
+      minimum: 77
+    intermediate:
+      minimum: 37
+      maximum_exclusive: 77
+    lagging:
+      maximum_exclusive: 37
+  periodicity: monthly
+  source: ГИС ЖКХ, ГЖИ и данные ОМС
+  subindicators:
+  - code: gosuslugi_dom_users
+    formula: users / population * 100%
+    groups:
+      leader:
+        minimum: 35
+      intermediate:
+        minimum: 30
+        maximum_exclusive: 35
+      lagging:
+        maximum_exclusive: 30
+  - code: electronic_general_meetings
+    formula: electronic_meetings / all_meetings * 100%; if denominator=0 then 0
+    groups:
+      leader:
+        minimum: 60
+      intermediate:
+        minimum: 40
+        maximum_exclusive: 60
+      lagging:
+        maximum_exclusive: 40
+  - code: max_chats_40_plus
+    formula: chats_with_40_plus / all_MKD_chats * 100%
+    groups:
+      leader:
+        minimum: 100
+      lagging:
+        maximum_exclusive: 100
+    effective_from: 2026-03
+- number: 7
+  code: gisogd
+  name: Доля документов территориального планирования и ПЗЗ, внесённых в ГИСОГД в векторном формате
+  base_weight: 0.07142857142857142
+  formula: (vector_general_plans / approved_general_plans * 0.3 + vector_PZZ / approved_PZZ * 0.7) * 100%
+  groups:
+    leader:
+      minimum: 70
+    intermediate:
+      minimum: 35
+      maximum_exclusive: 70
+    lagging:
+      maximum_exclusive: 35
+  periodicity: monthly
+  source: ГИСОГД
+- number: 8
+  code: education
+  name: Цифровая зрелость в сфере Образование
+  base_weight: 0.07142857142857142
+  formula: average(P8.1_score, P8.2_score) * 100%
+  groups:
+    leader:
+      minimum: 60
+    intermediate:
+      minimum: 35
+      maximum_exclusive: 60
+    lagging:
+      maximum_exclusive: 35
+  periodicity: quarterly
+  source: Министерство образования и науки
+  subindicators:
+  - code: schools_using_moya_shkola
+    formula: schools_using / all_schools * 100%
+    score: 1 при >=85%; 0.5 при 50-<85%; 0 при <50%
+  - code: users_of_digital_content
+    formula: (students_using + teachers_using) / (all_students + all_teachers) * 100%
+    score: 1 при >=30%; 0.5 при 15-<30%; 0 при <15%
+- number: 9
+  code: sport
+  name: Цифровая зрелость в сфере Физическая культура и спорт
+  base_weight: 0.07142857142857142
+  formula: average(applicable subindicator values)
+  groups:
+    leader:
+      minimum_exclusive: 50
+    intermediate:
+      minimum_exclusive: 20
+      maximum: 50
+    lagging:
+      maximum: 20
+  periodicity: quarterly
+  source: Мой спорт / РИС ФКиС / ФГИС Спорт / форма 5-ФК
+  applicability: только для муниципалитетов с подведомственными организациями спортивной подготовки
+  subindicators:
+  - code: organizations_using_platform
+    formula: organizations_using_platform / all_sport_training_organizations * 100%
+  - code: active_digital_users
+    formula: active_platform_users / students_in_sport_training * 100%
+  - code: bookable_sport_objects
+    formula: objects_with_dynamic_load_and_booking / municipal_sport_objects * 100%
+  - code: electronic_enrollment
+    formula: organizations_with_electronic_enrollment / all_sport_training_organizations * 100%
+- number: 10
+  code: stray_animals
+  name: Доля выполненных заявок по отлову животных без владельцев
+  base_weight: 0.07142857142857142
+  formula: completed_requests / received_requests * 100%
+  groups:
+    leader:
+      minimum: 85
+    intermediate:
+      minimum: 70
+      maximum_exclusive: 85
+    lagging:
+      maximum_exclusive: 70
+  periodicity: quarterly
+  effective_from: 2026-06
+  source: Главное управление ветеринарии
+  applicability: если заявок нет, ставится прочерк и показатель исключается из общей оценки
+- number: 11
+  code: broadband
+  name: Доля муниципальных социально значимых объектов, имеющих ШПД
+  base_weight: 0.07142857142857142
+  formula: (local_government_with_internet + culture_objects_with_internet) / (all_local_government + all_culture_objects
+    - excluded_objects) * 100%
+  groups:
+    leader:
+      minimum: 100
+    intermediate:
+      minimum: 75
+      maximum_exclusive: 100
+    lagging:
+      maximum_exclusive: 75
+  periodicity: quarterly
+  source: форма ОМ-100 в БАРС Муниципалитет
+  requirements: обычно не менее 10 Мбит/с; в исключительных малых населённых пунктах допускается не менее 2 Мбит/с
+- number: 12
+  code: ai_datasets
+  name: Количество наборов данных для искусственного интеллекта, размещённых в ГИС РСУД
+  base_weight: 0.07142857142857142
+  formula: cumulative count of approved AI datasets during reporting year
+  groups:
+    leader:
+      condition: '>=1'
+    lagging:
+      condition: '0'
+  periodicity: quarterly
+  effective_from: 2026-09
+  source: ГИС РСУД
+  requirements:
+  - статус Согласовано
+  - нет персональных данных и охраняемой законом тайны
+  - структурированность, уникальность, полнота
+  - для изображений обычно 100-300 файлов
+- number: 13
+  code: centralized_ai
+  name: Участие в проектах по внедрению ИИ на базе централизованных решений
+  base_weight: 0.07142857142857142
+  formula: (P13.1 + P13.2 + P13.3 + P13.4) * 100%
+  groups:
+    leader:
+      minimum: 60
+    intermediate:
+      minimum: 30
+      maximum_exclusive: 60
+    lagging:
+      maximum_exclusive: 30
+  periodicity: quarterly
+  effective_from: 2026-09
+  source: ОМСУ, Минцифры и ОГБУ ЧРЦНИТ
+  subindicators:
+  - code: access
+    points: 0.1
+    condition: получен доступ
+  - code: trial
+    points: 0.2
+    condition: среднее число запросов на пользователя >=10
+  - code: effect_assessment
+    points: 0.4
+    condition: форма оценки эффектов согласована
+  - code: improvement_proposals
+    points: 0.3
+    condition: предложения по развитию решения направлены
+- number: 14
+  code: local_ai
+  name: Реализация проектов по внедрению ИИ на базе собственных решений
+  base_weight: 0.07142857142857142
+  formula: 100% when all required activities are complete, otherwise 0%
+  groups:
+    leader:
+      condition: 100%
+    not_counted:
+      condition: 0%
+  periodicity: quarterly
+  effective_from: 2026-09
+  source: ОГБУ ЧРЦНИТ
+  required_activities:
+  - внедрён и документально введён в эксплуатацию ИИ-сценарий
+  - оценены эффекты
+  - информация размещена на портале Цифровой регион
+  important_note: Индивидуальное использование внешних частных сервисов сотрудниками, например ChatGPT или YandexGPT,
+    не учитывается.

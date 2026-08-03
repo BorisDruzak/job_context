@@ -1,0 +1,42 @@
+schema_version: 1
+municipality: Сосновский МО
+as_of: '2026-06-30'
+source_id: rating-2026-06
+rank: 29
+official_total: 79.8
+official_group: intermediate
+change_from_previous: 10.21
+indicator_values:
+  mszu: 92.41
+  pos: 64.29
+  gov_publics: 86.97
+  goskey: 100.0
+  transport: 100.0
+  urban_environment: 25.46
+  gisogd: 83.13
+  education: 100.0
+  sport: null
+  stray_animals: 45.74
+  broadband: 100.0
+  ai_datasets: null
+  centralized_ai: null
+  local_ai: null
+strong_indicators:
+- goskey
+- transport
+- education
+- broadband
+- mszu
+priority_risks:
+- urban_environment
+- pos
+- stray_animals
+- ai_datasets
+- centralized_ai
+- local_ai
+inferences:
+- Рост июня к маю связан не только с изменением текущих показателей, но и с квартальным обновлением образования,
+  ветеринарии и ШПД.
+- Самый крупный межведомственный резерв — городская среда; отдел не обладает прямыми полномочиями над всеми участниками
+  процесса.
+next_review: при получении рейтинга за июль 2026 или нового протокола подкомиссии

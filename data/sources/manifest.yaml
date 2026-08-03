@@ -1,0 +1,65 @@
+schema_version: 1
+sources:
+- id: methodology-2025-order-147
+  kind: official_methodology
+  title: Методика расчёта показателей цифровой трансформации, приказ от 07.11.2025 № 147
+  effective_period: 2025-11-07/2026-05-26
+  source_file_name: Методика на 2025 год.pdf
+  repository_copy: false
+  contains_personal_contacts: false
+  extraction_scope: общие правила, формулы, пороги и 10 показателей
+  verification_status: verified_against_uploaded_pdf
+- id: methodology-2026-order-61
+  kind: official_methodology
+  title: Методика расчёта показателей цифровой трансформации, приказ от 27.05.2026 № 61
+  effective_period: 2026-05-27/open
+  source_file_name: Методика на 2026 год-май (1).pdf
+  repository_copy: false
+  contains_personal_contacts: false
+  extraction_scope: общие правила, формулы, пороги и 14 показателей
+  verification_status: verified_against_uploaded_pdf
+- id: rating-2026-04
+  kind: official_rating_export
+  title: Рейтинг муниципальных образований по показателям цифровой трансформации, апрель 2026
+  effective_period: 2026-04
+  source_file_name: Сводный_рейтинг_ОМСУ_апрель_2026.pdf
+  repository_copy: false
+  contains_personal_contacts: false
+  extraction_scope: сводная таблица и детализация показателей
+  verification_status: verified_against_uploaded_pdf
+- id: rating-2026-05
+  kind: official_rating_export
+  title: Рейтинг муниципальных образований по показателям цифровой трансформации, май 2026
+  effective_period: 2026-05
+  source_file_name: ОМ-048_май_2026(1).pdf
+  repository_copy: false
+  contains_personal_contacts: false
+  extraction_scope: сводная таблица и детализация показателей
+  verification_status: verified_against_uploaded_pdf
+- id: rating-2026-06
+  kind: official_rating_export
+  title: Рейтинг муниципальных образований по показателям цифровой трансформации, июнь 2026
+  effective_period: 2026-06
+  source_file_name: ОМ-048_июнь_2026_Итоги.pdf
+  repository_copy: false
+  contains_personal_contacts: false
+  extraction_scope: сводная таблица и детализация показателей
+  verification_status: verified_against_uploaded_pdf
+- id: subcommission-34-2026-08-03
+  kind: operational_presentation
+  title: XXXIV заседание подкомиссии по цифровому развитию муниципальных образований
+  effective_period: '2026-08-03'
+  source_file_name: Общая презентация Подкомиссии _34 от 03.08.2026.pdf
+  repository_copy: false
+  contains_personal_contacts: true
+  extraction_scope: обезличенные поручения, сроки, рейтинговая аналитика и оперативные требования
+  verification_status: verified_against_uploaded_pdf
+- id: operator-context-2026-08-04
+  kind: operator_note
+  title: Пояснения сотрудника о фактической работе отдела и показателях Сосновского МО
+  effective_period: '2026-08-04'
+  source_file_name: null
+  repository_copy: false
+  contains_personal_contacts: false
+  extraction_scope: фактические роли, ограничения полномочий и приоритеты автоматизации
+  verification_status: operator_statement
