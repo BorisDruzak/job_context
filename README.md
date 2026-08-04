@@ -14,7 +14,9 @@
 
 ## Навигация
 
-- [Отчёт за июнь 2026](reports/sosnovsky-2026-06.md)
+- [Краткая сводка за июнь 2026](reports/sosnovsky-2026-06-brief.md)
+- [План повышения рейтинга](docs/plans/rating-improvement-plan-2026.md)
+- [Полный отчёт за июнь 2026](reports/sosnovsky-2026-06.md)
 - [Методика 2026](docs/methodology/2026.md)
 - [Изменения методики](docs/methodology/changes-2025-to-2026.md)
 - [История Сосновского МО](data/ratings/sosnovsky-history.csv)
